@@ -22,6 +22,40 @@ Universal coding standards and practical engineering patterns for TypeScript, Ja
 - Keeping TypeScript, JavaScript, React, and Node.js work consistent across projects.
 - Teaching an agent your preferred default engineering style.
 
+## Install
+
+```bash
+npx skills add Jorgut/coding-standards-skill
+```
+
+Manual install:
+
+```bash
+git clone https://github.com/Jorgut/coding-standards-skill.git
+```
+
+Then place or symlink the folder into your agent's skill directory, such as `~/.codex/skills/`, `~/.claude/skills/`, or `~/.config/opencode/skills/`.
+
+## How To Use
+
+Ask your agent to use the skill before implementation or review:
+
+```text
+Use coding-standards while implementing this TypeScript feature.
+Review this React component with coding-standards.
+Apply my coding standards before making the final commit.
+```
+
+## Example Checks
+
+The skill should push the agent toward:
+
+- small, direct implementations before abstractions
+- typed interfaces instead of loose `any`
+- immutable updates in React state
+- predictable error handling
+- tests for behavior that can regress
+
 ## Core Principles
 
 - Readability first.
@@ -35,6 +69,8 @@ Universal coding standards and practical engineering patterns for TypeScript, Ja
 ## Scope
 
 This skill is intentionally broad. It is best used as a baseline alongside framework-specific skills, project-specific `AGENTS.md` rules, or a dedicated review skill.
+
+It does not replace framework-specific guidance for Django, Spring Boot, SwiftUI, database design, security review, or accessibility audits. Pair it with those skills when the project needs them.
 
 ## License
 
